@@ -1,0 +1,40 @@
+body {
+    background-color:rgb(255, 104, 179)
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+
+.cellmenu {
+    padding: 20px 153px;
+    background-color:#323232;
+    border-collapse:collapse;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 300%;
+    width: auto;
+    border-collapse:collapse;
+  }
+
+.tablebody {
+    width: 1241px;
+    height: 1500px;
+    background-color: rgb(114, 114, 114);
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse:collapse;
+}
+
+.gigachad-multipla{
+    width: 620px;
+    height: 620px;
+    border-collapse:collapse;
+}
