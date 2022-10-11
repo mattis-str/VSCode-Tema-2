@@ -19,6 +19,8 @@ header {
     display: block;
     top: 0;
     z-index: 5;*/
+    filter: drop-shadow(0 0 0.25rem rgb(0, 0, 0));
+    z-index: 5;
 }
 
 .header-img {
@@ -29,7 +31,7 @@ header {
 @media screen and (min-width:700px) {
     .header-img {
         display: block;
-        width: 150px;
+        width: 7rem;
         height: auto;
     }
 }
@@ -40,7 +42,6 @@ header {
         justify-content: space-between;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         height: 4rem;
         align-items: center;
         background-color: #8aa490;
@@ -72,8 +73,11 @@ header ul {
         padding-bottom: 5%;
         font-family: 'Open Sans', sans-serif;
         margin-top: 1rem;
+        /* margin-bottom: 550rem; */
         background-color:#8aa490;
         margin-bottom: auto;
+        filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.6));
+        z-index: -3;
     }
 
     .flex-container {
@@ -81,8 +85,8 @@ header ul {
         flex-flow:column wrap;
         flex-direction: row;
         justify-content: center;
-        background-color: #ffffff;
-    }
+/*         background-color: #ffffff;
+ */    }
 
     .flex-item {
         width: 50%;
@@ -95,21 +99,15 @@ header ul {
         text-align: left;
     }
 
+
     .flex-item-2 {
-/*         border-inline: solid #000000 1px;
- */
-    }
-
-    .flex-item-3 {
-
-    }
-
-    .flex-item-4 {
         width: 100%;
         font-size: 2rem;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         text-align: center;
         max-height: 150px;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 
     .gallery { 
@@ -138,7 +136,7 @@ header ul {
    }
 
 
-/* footer */
+/* footer mobil */
     footer {
 
     }
@@ -150,6 +148,7 @@ header ul {
         height: 5rem;
         position: fixed;
         width: 100%;
+        filter: drop-shadow(0 0 0.25rem rgb(0, 0, 0));
     }
 
 
@@ -159,8 +158,28 @@ header ul {
         }
     }
 
+
     .footer-nav ul {
         display: flex;
         gap: 0rem;
         list-style: none;
     }
+
+/* footer desktop 
+    @media screen and (max-width: 699) {
+        .footer-desktop {
+            display: block;
+            background-color: #ffffff;
+            bottom: 0;
+            height: 5rem;
+            position: fixed;
+            width: 100%;
+            filter: drop-shadow(0 0 0.25rem rgb(0, 0, 0));
+        }
+    }
+
+    .footer-desktop ul {
+        display: flex;
+        gap: 0rem;
+        list-style: none;
+    } */
