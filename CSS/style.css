@@ -14,12 +14,25 @@ body {
 
 /* Menu top */
 header {
+  /*position: fixed;
+    width: 100%;
+    display: block;
+    top: 0;
+    z-index: 5;*/
   filter: drop-shadow(0 0 0.25rem rgb(0, 0, 0));
   z-index: 5;
 }
 
 .header-img {
   display: none;
+}
+
+@media screen and (min-width: 700px) {
+  .header-img {
+    display: block;
+    width: 7rem;
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -34,26 +47,6 @@ header {
     position: sticky;
     top: 0;
   }
-
-  header ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    padding-top: 3rem;
-  }
-
-  .flex-item-header-1 {
-    flex: 1;
-    width: 5rem;
-    height: 5rem;
-    margin: auto;
-  }
-
-  .header-img {
-    display: block;
-    width: 7rem;
-    height: auto;
-  }
 }
 
 header ul {
@@ -61,6 +54,12 @@ header ul {
 }
 
 @media screen and (min-width: 700px) {
+  header ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding-top: 3rem;
+  }
 }
 
 /* Body box 1 */
@@ -119,6 +118,17 @@ main {
   height: auto;
 }
 
+/* header  */
+
+@media screen and (min-width: 700px) {
+  .flex-item-header-1 {
+    flex: 1;
+    width: 5rem;
+    height: 5rem;
+    margin: auto;
+  }
+}
+
 .flex-item-header-1:hover {
   flex: 1;
   width: 5rem;
@@ -129,6 +139,25 @@ main {
 }
 
 /* footer mobil */
+
+/* footer desktop 
+    @media screen and (max-width: 699) {
+        .footer-desktop {
+            display: block;
+            background-color: #ffffff;
+            bottom: 0;
+            height: 5rem;
+            position: fixed;
+            width: 100%;
+            filter: drop-shadow(0 0 0.25rem rgb(0, 0, 0));
+        }
+    }
+
+    .footer-desktop ul {
+        display: flex;
+        gap: 0rem;
+        list-style: none;
+    } */
 
 footer {
   filter: drop-shadow(0 0 0.25rem rgb(0, 0, 0));
@@ -148,7 +177,9 @@ footer {
     bottom: 0;
     width: 100%;
   }
+}
 
+@media screen and (max-width: 700px) {
   footer ul {
     list-style: none;
     display: flex;
@@ -156,14 +187,7 @@ footer {
     padding-top: 2rem;
     text-align: center;
   }
-
-  .flex-item-header-1 {
-    flex: 1;
-    height: 5rem;
-    margin: auto;
-  }
 }
-
 @media screen and (min-width: 700px) {
   footer ul {
     display: none;
@@ -173,4 +197,12 @@ footer {
 a {
   text-decoration: none;
   color: #0d0d0d;
+}
+
+@media screen and (max-width: 700px) {
+  .flex-item-header-1 {
+    flex: 1;
+    height: 5rem;
+    margin: auto;
+  }
 }
