@@ -105,7 +105,6 @@ header ul {
     .flex-item-1 {
         font-size: 3vw;
         text-align: left;
-        min-height: 420px;
     }
 
 
@@ -131,12 +130,15 @@ header ul {
 
 /* header  */ 
 
+@media screen and (min-width: 700px) {
     .flex-item-header-1 {
         flex: 1;
         width: 5rem;
         height: 5rem;
         margin: auto;
     }
+
+}
 
     .flex-item-header-1:hover {
         flex: 1;
@@ -188,7 +190,7 @@ header ul {
             height: 4rem;
             align-items: center;
             background-color: #9FA6A5;
-            padding: 1rem;
+            padding-top: 2rem;
             position:fixed;
             bottom: 0;
             width: 100%;
@@ -203,11 +205,26 @@ header ul {
             list-style: none;
             display: flex;
             gap: 1rem;
-            padding-top: 3rem;
+            padding-top: 2rem;
+            text-align: center;
         }
     }
     @media screen and (min-width: 700px) {
         footer ul {
             display: none;
         }
+    }
+
+    a {
+        text-decoration: none;
+        color: #0D0D0D;
+    }
+
+    @media screen and (max-width: 700px) {
+        .flex-item-header-1 {
+            flex: 1;
+            height: 5rem;
+            margin: auto;
+        }
+    
     }
