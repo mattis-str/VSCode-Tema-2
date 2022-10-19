@@ -14,11 +14,6 @@ body {
 
 /* Menu top */
 header {
-  /*position: fixed;
-    width: 100%;
-    display: block;
-    top: 0;
-    z-index: 5;*/
   filter: drop-shadow(0 0 0.25rem rgb(0, 0, 0));
   z-index: 5;
 }
@@ -93,6 +88,13 @@ main {
   margin: 0rem;
 }
 
+/* @media screen and (max-width:700px) {
+    .flex-item {
+        width: 100%;
+        margin: 0rem;
+      }
+} */
+
 .flex-item-1 {
   font-size: 3vw;
   text-align: left;
@@ -140,24 +142,6 @@ main {
 
 /* footer mobil */
 
-/* footer desktop 
-    @media screen and (max-width: 699) {
-        .footer-desktop {
-            display: block;
-            background-color: #ffffff;
-            bottom: 0;
-            height: 5rem;
-            position: fixed;
-            width: 100%;
-            filter: drop-shadow(0 0 0.25rem rgb(0, 0, 0));
-        }
-    }
-
-    .footer-desktop ul {
-        display: flex;
-        gap: 0rem;
-        list-style: none;
-    } */
 
 footer {
   filter: drop-shadow(0 0 0.25rem rgb(0, 0, 0));
